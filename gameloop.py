@@ -8,7 +8,7 @@ class Game:
         "Initialze the game"
         # Initiate the game vars
         self.save_path=save_path # for resaving data
-        self.clicks=pyson.getData(save_path,"clicks")
+        self.clicks=int(pyson.getData(save_path,"clicks"))
         self.user=pyson.getData(save_path,"localUser")
         self.upgrades=pyson.getData(save_path,"boughtShop")
         self.clicksPerTick=pyson.getData(save_path,"clicksPerTick")
@@ -17,7 +17,8 @@ class Game:
     def save(self):
         "Saves the game, DOESN'T WORK RN"
         
-        real.printD("FIX THIS","Developers")
+        pyson.updateData(self.save_path, "clicks",str(self.clicks))
+        # Temp solution while I test
 
     def click(self):
         "Click"

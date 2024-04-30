@@ -1,0 +1,5 @@
+localUser:str:test_user_1
+clicks:int:0
+boughtShop:list:(*)
+clicksPerTick:int:0
+clicksPerClick:int:1

@@ -1,5 +1,5 @@
 localUser:str:test_user_1
-clicks:int:13
+clicks:int:116
 boughtShop:list:(*)
 clicksPerTick:int:0
-clicksPerClick:int:1
+clicksPerClick:int:6

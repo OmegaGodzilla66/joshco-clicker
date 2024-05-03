@@ -2,7 +2,6 @@
 import os
 import random
 from time import sleep
-
 from colorama import Fore, Style
 
 
@@ -86,6 +85,7 @@ def printS(text: str, color: str = "", delay: float = 0.01, newline: bool = Fals
             delay = 0
 
     print() #gives newline *and* style reset!
+
 def printD(text: str, talker: str="Prism", color: str = "", delay: float = 0.02):
     '''Print function specialized for dialouge
     Input: text, talker --> Talker: text'''
@@ -245,5 +245,6 @@ def OWTVisualizer(map):
             toPrint+=map[x][y]+"   "+Style.RESET_ALL
         print(toPrint,"\n")
     return map
+
 
 ## END OF FILE ##

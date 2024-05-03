@@ -4,7 +4,7 @@ from colorama import Fore
 
 from realengine import printS, menu
 
-import pyson
+import pyson_data as pyson
 
 import gameloop
 
